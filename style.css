@@ -1,14 +1,14 @@
 body {
-  background-color: #eaeaea;
+  background-color: #fff; /* white background */
+  color: #222; /* very dark gray text for strong contrast */
   font-family: "Times New Roman", Times, serif;
-  color: #999;
   padding: 0;
   top: 0 !important;
 }
 
 /* Navbar Styles */
 .navbar {
-  background-color: #f8f8f8;
+  background-color: #fff !important;
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -16,11 +16,11 @@ body {
 .navbar-brand {
   font-size: 22px;
   letter-spacing: 1px;
-  color: #aaa;
+  color: #111 !important;
 }
 
 .nav-link {
-  color: #aaa !important;
+  color: #111 !important;
   font-size: 14px;
   letter-spacing: 1px;
   margin: 0 10px;
@@ -35,13 +35,13 @@ body {
 /* Testimonials Section */
 .testimonials-section {
   padding: 80px 0;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6; /* Lighter gray for better contrast */
 }
 
 .testimonials-section h2 {
   font-size: 28px;
   letter-spacing: 1px;
-  color: #b0b0b0;
+  color: #222; /* Darker heading for contrast */
 }
 
 .testimonial-card {
@@ -51,6 +51,9 @@ body {
   flex-direction: column;
   transition: all 0.3s ease;
   position: relative;
+  background-color: #fff; /* White background for strong contrast */
+  color: #222;            /* Dark text for readability */
+  border: 1px solid #bbb; /* Slightly darker border for definition */
 }
 
 .testimonial-number {
@@ -111,19 +114,19 @@ body {
   margin-bottom: 15px;
   font-size: 15px;
   line-height: 1.5;
-  color: #aaaaaa;
+  color: #333; /* Darker text for better readability */
 }
 
 .testimonial-author {
   font-weight: 600;
   margin-bottom: 2px;
   font-size: 14px;
-  color: #999;
+  color: #444; /* Darker gray for better contrast */
 }
 
 .testimonial-location {
   font-size: 12px;
-  color: #aaa;
+  color: #444; /* Darker gray for better contrast */
   margin-bottom: 0;
 }
 
@@ -152,11 +155,11 @@ body {
 
 /* Form styles */
 .form-control {
-  border: none;
+  border: 1px solid #888;
   border-radius: 0;
-  border-bottom: 1px solid #ccc;
   padding: 10px 0;
-  background-color: transparent;
+  background-color: #fff;
+  color: #222;
   box-shadow: none;
   font-size: 16px;
 }
@@ -168,11 +171,11 @@ body {
 }
 
 .form-select {
-  border: none;
+  border: 1px solid #888;
   border-radius: 0;
-  border-bottom: 1px solid #ccc;
   padding: 10px 0;
-  background-color: transparent;
+  background-color: #fff;
+  color: #222;
   font-size: 16px;
 }
 
@@ -252,7 +255,9 @@ textarea.form-control {
   display: none !important;
 }
 
+/* Footer with dark text on light background */
 .footer {
-  background-color: #f9f9f9;
+  background-color: #f8f9fa;
+  color: #111;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
