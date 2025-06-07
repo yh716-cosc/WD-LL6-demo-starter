@@ -261,3 +261,72 @@ textarea.form-control {
   color: #111;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* RTL support for beginners: 
+   Add the class "translated-rtl" to the <body> or a container 
+   when the page is in Arabic or another right-to-left language. */
+
+.translated-rtl {
+  direction: rtl;      /* Makes text flow from right to left */
+  text-align: right;   /* Aligns text to the right */
+}
+
+/* Navbar: flip alignment for RTL */
+.translated-rtl .navbar .navbar-nav {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Navbar links: align to the right */
+.translated-rtl .navbar .navbar-nav .nav-link {
+  text-align: right;
+}
+
+/* Testimonials: flip padding and borders for RTL */
+.translated-rtl .testimonial-1 {
+  border-left: none;
+  border-right: 1px solid #eee;
+  padding-left: 0;
+  padding-right: 20px;
+}
+.translated-rtl .testimonial-3 {
+  border-right: none;
+  border-left: 1px solid #eee;
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+/* Testimonial number: round opposite corner for RTL */
+.translated-rtl .testimonial-number {
+  border-radius: 0 0 0 5px;
+}
+
+/* Form labels and inputs: align right for RTL */
+.translated-rtl label,
+.translated-rtl .form-control,
+.translated-rtl .form-select,
+.translated-rtl textarea.form-control {
+  text-align: right;
+}
+
+/* Radio buttons: align right for RTL */
+.translated-rtl .form-check {
+  text-align: right;
+}
+
+/* Google Translate widget: move to left for RTL */
+.translated-rtl .google-translate-container {
+  right: auto;
+  left: 20px;
+}
+
+/* Footer: align text right for RTL */
+.translated-rtl .footer {
+  text-align: right;
+}
+
+/* 
+Beginner tip:
+Just add class="translated-rtl" to your <body> tag or a main container 
+when you want the page to display right-to-left (for Arabic, etc).
+*/
